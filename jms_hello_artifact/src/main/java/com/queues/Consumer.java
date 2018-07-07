@@ -1,4 +1,4 @@
-package com;
+package com.queues;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -32,7 +32,7 @@ public class Consumer {
 			c = cf.createConnection();
 			
 			
-			s = c.createSession(false, Session.AUTO_ACKNOWLEDGE);
+			s = c.createSession(true, Session.AUTO_ACKNOWLEDGE);
 
 			Destination d = s.createQueue("jms/fristQueue");
 

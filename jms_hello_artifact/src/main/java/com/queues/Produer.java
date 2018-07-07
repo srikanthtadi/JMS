@@ -1,4 +1,4 @@
-package com;
+package com.queues;
 
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
@@ -35,7 +35,7 @@ private static String url = ActiveMQConnection.DEFAULT_BROKER_URL;
 	 
 	MessageProducer p =  s.createProducer(d);
 	
-	TextMessage  t  = s.createTextMessage("Hi.. This is fifth  message");
+	TextMessage  t  = s.createTextMessage("Hi.. This is 4  message");
 	
 	p.send(t);
 	System.out.println("message sent");
