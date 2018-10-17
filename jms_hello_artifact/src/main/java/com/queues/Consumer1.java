@@ -1,4 +1,5 @@
 package com.queues;
+
 import javax.jms.Connection;
 import javax.jms.ConnectionFactory;
 import javax.jms.Destination;
@@ -22,6 +23,8 @@ public class Consumer1 {
 
 		ConnectionFactory cf = null;
 		Connection c = null;
+
+
 		Session s = null;
 
 		try {
